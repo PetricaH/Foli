@@ -80,44 +80,39 @@ html {
 }
 
 .menu-links {
-    flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 150px;
+    left: -100%;
     background-color: #000;
     width: 100%;
-    height: 0;
+    height: 100vh;
     box-sizing: border-box;
     overflow: hidden;
-    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, left .3s ease-in-out; /* Add left property to the transition */
     z-index: 8;
 }
 
 .menu-links.show {
-    transform: translateY(100%);
-    transition: .3s ease-in;
-    height: 100vh;
-    overflow-y: auto;
+    left: 0;
 }
 
 .menu-links a {
-    margin-top: 15px;
-    margin-right: 50px;
     text-decoration: none;
     color: #fff;
     text-align: right;
     transition: background-color .3s;
+    margin-bottom: 30px;
+    margin-right: 50px;
 }
 
 .menu-links a:hover {
-    background-color: #333;
+    background-color: rgba(255, 168, 0, .3);
 }
 
 .menu.change + .menu-links {
     display: flex;
-    transform: translateY(0);
 }
 
 /*end of navbar*/
@@ -125,7 +120,7 @@ html {
 /*hero bg*/
 
 #hero-section {
-    height: 100vh;
+    height: 85vh;
     background: url(images/hero-bg.jpg);
     background-size: cover;
     background-position: center;
@@ -153,4 +148,149 @@ html {
     transform: translate(-50%, -50%);
     font-size: 2rem;
     color: rgba(255, 168, 0, 1);
+}
+
+.socials-hero-section a {
+    color: #FFA800;
+    transition: color .2s ease-in-out;
+} 
+
+.socials-hero-section a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/*featured products section*/
+
+#featured-products-section {
+    background-color: rgba(28, 73, 59, .3);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 100px;
+}
+
+.category-container {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    position: relative;
+    width: 100%;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+@media (min-width: 950px) {
+    .category-container {
+        width: 40vw;
+    }
+ }
+
+
+.button-and-title-container {
+    height: 64px;
+    background-color: black;
+    position: relative;
+}
+
+.category-title {
+    position: absolute;
+    top: 1%;
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    bottom: 0;
+    position: absolute;
+    z-index: 999;
+    opacity: 50%;
+    transition: opacity .3s ease;
+}
+
+.more-button {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    background-color: #FFA800;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transform: skew(-10deg) translateY(-50%);
+    width: 100px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    transition: .2s ease;
+}
+
+.more-button:hover {
+    color: white;
+}
+
+.products-container {
+    display: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product {
+    padding: 20px;
+    border-bottom: 1px solid #777;
+}
+
+.goods-container {
+    background-color: rgba(28, 73, 59, .3);
+    position: relative;
+    border-radius: 15px;
+}
+
+.goods-container img {
+    width: 300px;
+    height: 300px;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.goods-price {
+    background-color: rgba(28, 73, 59, .3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #FFA800;
+    font-size: 2rem;
+}
+
+.goods-title {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.add-in-basket {
+    background-color: #FFA800;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: color .2s ease;
+}
+
+.add-in-basket:hover {
+    color: white;
 }

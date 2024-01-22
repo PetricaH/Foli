@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/1efbe1aa2f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Document</title>
 </head>
 <body>
@@ -43,10 +47,105 @@
         <h1>Foli</h1>
 
         <div class="socials-hero-section">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
+    </section>
+
+    <section id="featured-products-section">
+
+        <div class="category-container">
+            <div class="button-and-title-container">
+                <h1 class="category-title">Bags</h1>
+                <button class="more-button" data-category="backpacks">More</button>
+            </div>
+
+            <div class="products-container" id="backpacksContainer">
+                <div class="product">
+                    <div class="goods-container">
+                        <img src="images/A-Series.png" alt="A Series Backpack">
+                    </div>
+                    <div class="product-description">
+                        <h2 class="goods-title">A Series</h2>
+                        <p class="goods-price">$299</p>
+                        <button class="add-in-basket">
+                            <span class="material-symbols-outlined">
+                                add_shopping_cart
+                                </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="goods-container">
+                        <img src="images/B-Series.png" alt="B Series Backpack">
+                    </div>
+                    <div class="product-description">
+                        <h2 class="goods-title">B Series</h2>
+                        <p class="goods-price">$399</p>
+                        <button class="add-in-basket">
+                            <span class="material-symbols-outlined">
+                                add_shopping_cart
+                                </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="goods-container">
+                        <img src="images/C-Series.png" alt="C Series Backpack">
+                    </div>
+                    <div class="product-description">
+                        <h2 class="goods-title">C Series</h2>
+                        <p class="goods-price">$499</p>
+                        <button class="add-in-basket">
+                            <span class="material-symbols-outlined">
+                                add_shopping_cart
+                                </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-container">
+            <div class="button-and-title-container">
+                <h1 class="category-title">Coats</h1>
+                <button class="more-button" data-category="coats">More</button>
+            </div>
+
+            <div class="products-container" id="coatsContainer">
+              <div class="product">Coat 1</div>
+              <div class="product">Coat 2</div>
+              <div class="product">Coat 3</div>
+            </div>
+          </div>
+          
+          <div class="category-container">
+            <div class="button-and-title-container">
+                <h1 class="category-title">Pants</h1>
+                <button class="more-button" data-category="pants">More</button>
+            </div>
+
+            <div class="products-container" id="pantsContainer">
+              <div class="product">Pant 1</div>
+              <div class="product">Pant 2</div>
+              <div class="product">Pant 3</div>
+            </div>
+          </div>
+          
+          <div class="category-container">
+            <div class="button-and-title-container">
+                <h1 class="category-title">Boots</h1>
+                <button class="more-button" data-category="boots">More</button>
+            </div>
+
+            <div class="products-container" id="bootsContainer">
+              <div class="product">Boot 1</div>
+              <div class="product">Boot 2</div>
+              <div class="product">Boot 3</div>
+            </div>
 
     </section>
 
