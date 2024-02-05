@@ -324,8 +324,8 @@ html {
 
 .text-icons-tree-container > img {
     position: absolute;
-    top: 10%;
-    left: 15%;
+    top: 15%;
+    left: 35%;
     transform: translate(-50%, -50%);
     width: 300px;
     height: 300px;
@@ -561,19 +561,104 @@ form {
     transition: .2s;
 }
 
+@media (min-width:1200px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
 footer {
     position: relative;
     height: 80vh;
+    background-color: black;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
 }
 
 footer > a > h1 {
-    font-size: 13rem;
+    font-size: 3rem;
     font-weight: 300;
-    color: black;
+    color: #FFA800;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+}
+
+footer > a {
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.footer-links > ul {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-links > ul > li {
+    list-style-type: none;
+    color: rgba(255, 255, 255, .5);
+    transition: ease-in-out .2s;
+}
+
+.footer-links > ul > li:hover {
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: rgba(255, 168, 0, .5);
+    backdrop-filter: blur(50px);
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+
+}
+
+.subscribe-text {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    color: white;
+}
+
+.subscribe-email {
+    width: 250px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subscribe-btn {
+    outline: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transform: skew(-15deg);
+    font-style: italic;
+}
+
+.subscribe-btn:active {
+    background-color: rgba(255, 255, 255, .5);
 }
