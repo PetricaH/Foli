@@ -561,23 +561,28 @@ form {
     transition: .2s;
 }
 
-@media (min-width:1200px) {
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-}
-
 footer {
     position: relative;
     height: 80vh;
-    background-color: black;
+    background-color: #1C493B;
     margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10%;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1.8fr 0.2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    ". ."
+    "footer-second footer-second"; 
+}
+
+@media (max-width:580px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
 }
 
 footer > a > h1 {
@@ -586,14 +591,17 @@ footer > a > h1 {
     color: #FFA800;
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
+    text-align: center;
 }
 
 footer > a {
+    grid-column: span 2;
     text-decoration: none;
 }
 
 .footer-links {
     display: flex;
+    align-items: center;
     justify-content: center;
     margin-top: 100px;
 }
@@ -620,13 +628,10 @@ footer > a {
     gap: 50px;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    background-color: rgba(255, 168, 0, .5);
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(3px);
     width: 350px;
     height: 350px;
     border-radius: 20px;
-
 }
 
 .subscribe-text {
@@ -652,7 +657,7 @@ footer > a {
     font-family: 'Montserrat', sans-serif;
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: white;
+    background-color: rgba(255, 168, 0, 1);
     color: black;
     cursor: pointer;
     transform: skew(-15deg);
@@ -661,4 +666,13 @@ footer > a {
 
 .subscribe-btn:active {
     background-color: rgba(255, 255, 255, .5);
+}
+
+.footer-second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/images/footer-forest.jpg');
+    background-position: center;
+    background-size: cover;
 }
