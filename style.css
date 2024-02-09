@@ -17,7 +17,7 @@ html {
 
 .top-bar {
     height: 100px;
-    background: url(/images/top-bar-bg.jpg);
+    background: url(images/top-bar-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -122,7 +122,7 @@ html {
 
 #hero-section {
     height: 85vh;
-    background: url(/images/hero-bg.jpg);
+    background: url(images/hero-bg.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -411,7 +411,7 @@ html {
 }
 
 .story-one {
-    background: url('/images/bears.svg');
+    background: url('images/bears.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -448,7 +448,7 @@ html {
 }
 
 .story-two {
-    background: url('/images/birds.svg');
+    background: url('images/birds.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
