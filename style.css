@@ -672,7 +672,7 @@ footer > a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('/images/footer-forest.jpg');
+    background: url('images/footer-forest.jpg');
     background-position: center;
     background-size: cover;
 }
